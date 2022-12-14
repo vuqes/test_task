@@ -5,7 +5,6 @@ from .models import Product
 
 
 class ProductSerializers(serializers.ModelSerializer):
-    status = serializers.CharField(source='status.status_value')
     
     class Meta:
         model = Product
